@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#d71920">
+<title>Revisão ENEM — 2º Trimestre | Espanhol</title>
+<style>
+:root{--preto:#111;--papel:#fff8e7;--rojo:#d71920;--amarillo:#ffd700;--verde:#178b3b;--azul:#1565c0;--laranja:#f28b2c;--morado:#6b3fa0;--cinza:#ece7df;--shadow:0 9px 0 #111,0 22px 44px rgba(0,0,0,.18)}
+*{box-sizing:border-box}html{width:100%;max-width:100%;overflow-x:hidden;-webkit-text-size-adjust:100%}body{margin:0;min-height:100vh;overflow-x:hidden;color:#111;font-family:"Trebuchet MS","Segoe UI",Arial,sans-serif;background:linear-gradient(rgba(255,248,231,.94),rgba(255,248,231,.94)),repeating-linear-gradient(45deg,#111 0 18px,#222 18px 36px);padding-left:max(0px,env(safe-area-inset-left));padding-right:max(0px,env(safe-area-inset-right))}button,input{font:inherit}.hidden{display:none!important}
+.register-overlay{position:fixed;inset:0;z-index:99999;display:flex;align-items:center;justify-content:center;overflow:auto;padding:16px;background:repeating-linear-gradient(to bottom,transparent 0 28px,rgba(80,120,190,.13) 29px,transparent 30px),linear-gradient(135deg,#fffdf4,#fff2c9,#e5f6e9)}
+.register-box{width:min(610px,96vw);padding:24px;text-align:center;background:var(--papel);border:5px solid #111;border-radius:26px;box-shadow:0 11px 0 #111}.flag-band{height:22px;margin:-8px 0 18px;border:3px solid #111;border-radius:999px;background:linear-gradient(90deg,var(--rojo) 0 33.33%,var(--amarillo) 33.33% 66.66%,var(--verde) 66.66%)}.register-box h1{margin:0;color:var(--rojo);font-size:clamp(29px,7vw,45px);text-transform:uppercase;text-shadow:2px 2px 0 var(--amarillo)}.register-box h2{margin:8px 0 0;color:#0b2f62;font-size:clamp(20px,4vw,29px)}.register-box p{font-weight:900;line-height:1.5}.register-box input{width:100%;min-height:54px;margin:7px 0;padding:12px 14px;background:#fff;border:3px solid #111;border-radius:13px;font-size:17px;font-weight:800}
+.big-btn{min-height:52px;padding:10px 17px;cursor:pointer;border:4px solid #111;border-radius:13px;font-weight:1000;box-shadow:4px 4px 0 #111}.big-btn:active{transform:translate(3px,3px);box-shadow:1px 1px 0 #111}.btn-green{color:#fff;background:var(--verde)}.btn-yellow{background:var(--amarillo)}.btn-blue{color:#fff;background:var(--azul)}.btn-red{color:#fff;background:var(--rojo)}.register-box .big-btn{width:100%;margin-top:10px}.reg-msg{min-height:23px;margin-top:9px;color:#a40000;font-weight:1000}
+.topbar{position:sticky;top:0;z-index:900;padding:9px 13px;background:rgba(255,248,231,.97);border-bottom:4px solid #111;box-shadow:0 5px 16px rgba(0,0,0,.18)}.topbar-inner{width:min(1180px,100%);margin:auto;display:flex;align-items:center;justify-content:space-between;gap:12px}.student{min-width:0;font-size:clamp(12px,1.7vw,16px);font-weight:1000;overflow-wrap:anywhere}.top-actions{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.progress-pill{padding:7px 11px;background:#111;color:#fff;border:3px solid var(--amarillo);border-radius:999px;font-weight:1000}.new-student{min-height:38px;padding:6px 10px;color:#fff;background:var(--azul);border:3px solid #111;border-radius:10px;font-size:12px;font-weight:1000;cursor:pointer}
+.hero{padding:clamp(22px,4vw,42px) 16px 24px;text-align:center;border-bottom:7px solid #111;background:linear-gradient(rgba(255,255,255,.91),rgba(255,255,255,.91)),linear-gradient(90deg,var(--rojo) 0 33.33%,var(--amarillo) 33.33% 66.66%,var(--verde) 66.66%)}.kicker{display:inline-block;padding:7px 15px;color:#fff;background:#111;border-radius:999px;font-size:13px;font-weight:1000;letter-spacing:.08em}.hero h1{margin:12px 0 4px;color:var(--rojo);font-size:clamp(38px,8vw,76px);line-height:.98;text-transform:uppercase;text-shadow:3px 3px 0 #fff,6px 6px 0 rgba(0,0,0,.16)}.hero h2{margin:10px auto 0;max-width:950px;font-size:clamp(20px,4vw,34px)}.hero p{max-width:900px;margin:14px auto 0;font-size:clamp(15px,2.3vw,20px);font-weight:900;line-height:1.5}
+main{width:min(1180px,100%);margin:auto;padding:18px 14px 70px}.notice{margin:0 auto 18px;padding:15px 17px;background:#fff3cd;border:4px dashed #9a6c00;border-radius:18px;font-weight:900;line-height:1.5}.legend-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:0 0 18px}.legend-card{padding:12px;background:#fff;border:3px solid #111;border-radius:16px;box-shadow:4px 4px 0 #bbb;font-weight:900}.legend-card b{display:block;color:#0b2f62;margin-bottom:4px}
+.text-card{margin:0 0 22px;background:#fff;border:5px solid #111;border-radius:25px;box-shadow:var(--shadow);overflow:hidden}.text-head{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;padding:14px 17px;background:linear-gradient(90deg,#fff7d1,#f5efe5);border-bottom:4px solid #111}.text-head h2{margin:0;color:#0b2f62;font-size:clamp(22px,3vw,32px)}.topic-tag{display:inline-block;padding:6px 10px;background:var(--amarillo);border:3px solid #111;border-radius:999px;font-size:12px;font-weight:1000}.reading{padding:20px 22px;background:var(--papel)}.reading p{margin:0 0 14px;font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.02rem,1.9vw,1.15rem);line-height:1.72;text-align:justify}.reading p:last-child{margin-bottom:0}.question-zone{padding:18px 20px 22px}.question{margin:0 0 18px;padding:16px;background:#fff;border:4px solid #111;border-radius:18px;box-shadow:5px 5px 0 #ccc}.question:last-child{margin-bottom:0}.question h3{margin:0 0 10px;font-size:1.03rem;line-height:1.5}.difficulty{display:inline-block;margin:0 0 10px;padding:5px 10px;border:3px solid #111;border-radius:999px;font-size:12px;font-weight:1000}.difficulty.easy{background:#d9f6df}.difficulty.medium{background:#fff3cd}.difficulty.hard{background:#ffd9d9}.command{margin:0 0 12px;color:#333;font-weight:800;line-height:1.5}.alternatives{display:grid;gap:9px}.alt{display:flex;gap:10px;align-items:flex-start;width:100%;text-align:left;padding:11px 12px;background:#f8f8f8;border:3px solid #333;border-radius:12px;cursor:pointer;font-weight:800;line-height:1.42}.alt:hover{background:#fff2d9}.alt:disabled{cursor:default;opacity:1}.alt .letter{flex:0 0 31px;height:31px;display:grid;place-items:center;background:#111;color:#fff;border-radius:50%;font-weight:1000}.alt.correct{background:#d9f6df;border-color:var(--verde)}.feedback{min-height:25px;margin-top:9px;font-weight:1000}.feedback.ok{color:#0b6b2f}.feedback.bad{color:#a10d0d}.shake{animation:shake .35s linear}@keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-7px)}75%{transform:translateX(7px)}}
+.finish-box{display:none;margin:22px 0;padding:20px;text-align:center;background:#d9f6df;border:5px solid var(--verde);border-radius:22px;box-shadow:var(--shadow)}.finish-box.show{display:block}.finish-box h2{margin:0 0 8px;color:#0b6b2f}.finish-box p{font-weight:900;line-height:1.5}
+.admin-box{margin:18px auto 0;max-width:800px;padding:18px;text-align:center;background:#fff8df;border:5px solid #111;border-radius:22px;box-shadow:var(--shadow)}.admin-box.locked{opacity:.65}.admin-row{display:flex;gap:9px;justify-content:center;flex-wrap:wrap}.admin-row input{flex:1 1 240px;min-height:50px;padding:10px;text-align:center;border:4px solid var(--azul);border-radius:12px;font-weight:1000}.admin-msg{min-height:22px;margin-top:8px;font-weight:1000;color:#a40000}
+#certButton{position:fixed;right:12px;bottom:12px;z-index:950;color:#fff;background:#666}#certButton.ready{color:#063a20;background:#61df8d}
+.cert-overlay{position:fixed;inset:0;z-index:999999;display:none;align-items:center;justify-content:center;padding:12px;background:rgba(4,12,18,.94);overflow:auto}.cert-overlay.show{display:flex}.cert-card{width:min(1020px,100%);max-height:calc(100dvh - 24px);overflow:auto;background:#f8f0d3;border:8px double #86620c;border-radius:20px}.cert-inner{position:relative;isolation:isolate;min-height:680px;padding:clamp(22px,5vw,58px);text-align:center;overflow:hidden}.wm-cloud{position:absolute;inset:0;z-index:-2;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding:35px;opacity:.055;transform:rotate(-13deg) scale(1.16);font-size:56px;font-weight:1000}.cert-brand{color:#6e4c00;font-weight:1000}.cert-title{color:#8b1015;font-family:Georgia,serif;font-size:clamp(34px,6vw,68px)}.cert-sub{color:#176d35;font-size:clamp(17px,2.8vw,25px);font-weight:1000}.cert-name{max-width:860px;margin:24px auto 0;padding:8px;color:#0b5b43;border-bottom:3px solid #86620c;font-family:Georgia,serif;font-size:clamp(28px,5vw,51px);font-weight:900}.cert-text{max-width:800px;margin:18px auto;font-size:clamp(15px,2vw,19px);font-weight:800;line-height:1.55}.cert-meta{max-width:830px;margin:21px auto 0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;padding:15px;background:#ffffffaa;border:2px solid #86620c;border-radius:13px;text-align:left}.wide{grid-column:1/-1}.validation{max-width:830px;margin:14px auto 0;padding:12px;color:#fff;background:#111;border:3px solid #86620c;border-radius:12px;font-family:monospace;font-weight:900}.warning{max-width:800px;margin:13px auto 0;color:#694800;font-size:12px;font-weight:900}.cert-actions{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:22px}
+@media(max-width:780px){main{padding:14px 7px 90px}.topbar-inner{flex-direction:column;align-items:flex-start}.top-actions{width:100%;justify-content:space-between}.legend-row{grid-template-columns:1fr}.text-card{border-width:3px;border-radius:17px}.reading,.question-zone{padding:15px 12px}.question{padding:13px}.admin-row{flex-direction:column}.cert-overlay{align-items:flex-start;padding:6px}.cert-card{max-height:none}.cert-inner{min-height:0;padding:18px 12px}.cert-meta{grid-template-columns:1fr}.wide{grid-column:auto}.wm-cloud{grid-template-columns:repeat(2,1fr)}#certButton{left:8px;right:8px;bottom:8px}}
+@media print{body.cert-print *{visibility:hidden!important}body.cert-print .cert-overlay,body.cert-print .cert-overlay *{visibility:visible!important}body.cert-print .cert-overlay{position:absolute;inset:0;display:block!important;background:#fff}body.cert-print .cert-card{width:100%;max-height:none;border-radius:0}.cert-actions{display:none!important}}
+
+/* Camada adicional de integridade da revisão */
+body.exam-active{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none;touch-action:manipulation}.exam-shell{position:relative}.question-stage{display:none}.question-stage.active{display:block}.stage-card{position:relative;isolation:isolate;margin:0 0 22px;background:#fff;border:5px solid #111;border-radius:25px;box-shadow:var(--shadow);overflow:hidden}.stage-top{display:flex;gap:10px;justify-content:space-between;align-items:center;flex-wrap:wrap;padding:12px 16px;background:#111;color:#fff}.stage-count,.timer-pill,.session-pill{padding:6px 10px;border:3px solid #fff;border-radius:999px;font-weight:1000}.timer-pill.warn{background:#ffd54f;color:#111}.timer-pill.danger{background:#d71920;color:#fff}.stage-reading{position:relative;padding:22px;background:var(--papel)}.stage-reading p{margin:0 0 14px;font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.03rem,1.9vw,1.17rem);line-height:1.75;text-align:justify}.stage-reading p:last-child{margin-bottom:0}.stage-question{padding:18px 20px 22px}.next-wrap{display:none;margin-top:14px;text-align:center}.next-wrap.show{display:block}.integrity-note{margin:0 0 18px;padding:12px 14px;border:3px solid #111;border-radius:15px;background:#eaf4ff;font-weight:900;line-height:1.45}.watermark-layer{position:fixed;inset:0;z-index:850;pointer-events:none;overflow:hidden;opacity:.075;display:none}.watermark-layer.show{display:grid;grid-template-columns:repeat(3,1fr);gap:70px 20px;align-content:start;padding:70px 10px}.watermark-item{transform:rotate(-25deg);font-size:clamp(13px,1.6vw,18px);font-weight:1000;color:#111;white-space:nowrap;text-align:center}.guard-toast{position:fixed;left:50%;bottom:84px;transform:translateX(-50%);z-index:9998;display:none;max-width:min(720px,92vw);padding:10px 14px;background:#111;color:#fff;border:3px solid var(--amarillo);border-radius:14px;font-weight:900;text-align:center}.guard-toast.show{display:block}.screen-shield{position:fixed;inset:0;z-index:9997;display:none;align-items:center;justify-content:center;padding:20px;background:#111;color:#fff;text-align:center;font-weight:1000}.screen-shield.show{display:flex}.screen-shield div{max-width:720px;padding:24px;border:4px solid var(--amarillo);border-radius:18px}.screen-shield button{display:block;min-width:220px;margin:18px auto 0;padding:12px 18px;border:4px solid #fff;border-radius:13px;background:var(--amarillo);color:#111;font-weight:1000;cursor:pointer;box-shadow:4px 4px 0 #fff}.screen-shield button:disabled{opacity:.45;cursor:not-allowed}.question-stage .text-head{border-radius:0}.question-stage .question{margin:0}.question-stage .question h3{font-size:clamp(1.05rem,2.2vw,1.25rem)}
+@media(max-width:780px){.stage-reading,.stage-question{padding:15px 12px}.watermark-layer{grid-template-columns:repeat(2,1fr);gap:55px 8px;padding-top:100px}.stage-top{align-items:stretch}.stage-count,.timer-pill,.session-pill{flex:1 1 auto;text-align:center}}
+@media print{.watermark-layer,.guard-toast,.screen-shield{display:none!important}}
+
+</style>
+</head>
+<body>
+<div class="watermark-layer" id="watermarkLayer" aria-hidden="true"></div>
+<div class="guard-toast" id="guardToast"></div>
+<div class="screen-shield" id="screenShield"><div><p id="shieldMessage" style="margin:0;line-height:1.55">🔒 A revisão foi ocultada porque a janela perdeu o foco.</p><button id="resumeExamBtn" type="button" onclick="resumeProtectedExam()" disabled>RETOMAR QUESTÃO</button></div></div>
+<div class="register-overlay" id="registerOverlay">
+  <div class="register-box">
+    <div class="flag-band"></div>
+    <h1>Revisão ENEM</h1>
+    <h2>2º trimestre — Língua Espanhola</h2>
+    <p>Questões no estilo ENEM. Os textos estão em espanhol e os comandos e alternativas em português.</p>
+    <p>⚠️ Se houver erro ou o tempo da questão acabar, a atividade será reiniciada desde o registro. A ordem das questões, os textos e as alternativas mudam a cada tentativa.</p>
+    <input id="studentName" autocomplete="off" placeholder="Nome completo do aluno">
+    <input id="studentClass" autocomplete="off" placeholder="Turma">
+    <input id="studentSchool" autocomplete="off" placeholder="Escola">
+    <button class="big-btn btn-green" onclick="startLesson()">INICIAR REVISÃO</button>
+    <div class="reg-msg" id="regMsg"></div>
+  </div>
+</div>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <div class="student" id="studentLine">Aluno: — | Turma: — | Escola: —</div>
+    <div class="top-actions">
+      <div class="progress-pill" id="progressPill">Acertos: 0/10</div>
+      <button class="new-student" onclick="newStudent()">NOVO ALUNO</button>
+    </div>
+  </div>
+</div>
+
+<header class="hero">
+  <span class="kicker">PROJETO FALANGE • LÍNGUA ESPANHOLA • PREPARAÇÃO ENEM</span>
+  <h1>Revisão ENEM</h1>
+  <h2>Conteúdos do 2º trimestre</h2>
+  <p>Sete textos em espanhol sobre os conteúdos do 2º trimestre e 10 questões objetivas com níveis fácil, médio e difícil, inspiradas na estrutura do ENEM.</p>
+</header>
+
+<main>
+  <div class="notice"><strong>ORIENTAÇÃO:</strong> leia atentamente cada texto em espanhol e responda em português. Uma resposta incorreta reinicia a revisão por completo. Ao recomeçar, o sistema altera a organização dos textos e a ordem das alternativas, mantendo o mesmo conteúdo e o mesmo sentido.</div>
+  <div class="legend-row">
+    <div class="legend-card"><b>Textos em espanhol</b>Leitura e interpretação contextualizadas.</div>
+    <div class="legend-card"><b>Comandos em português</b>Formato semelhante ao adotado em Língua Estrangeira no ENEM.</div>
+    <div class="legend-card"><b>10 questões</b>3 fáceis • 4 médias • 3 difíceis, com foco crescente em interpretação.</div>
+  </div>
+  <div class="integrity-note">🔐 <strong>Modo de revisão individual:</strong> as questões aparecem uma por vez, a ordem muda a cada tentativa e a tela recebe uma marca d’água com a identificação do aluno.</div>
+  <div id="contentRoot" class="exam-shell"></div>
+
+  <section class="finish-box" id="finishBox">
+    <h2>✅ Revisão concluída!</h2>
+    <p>Você acertou as 10 questões. O certificado continua bloqueado e só pode ser liberado pelo professor com o código de autorização.</p>
+  </section>
+
+  <section class="admin-box locked" id="adminBox">
+    <h3>🔐 Liberação do certificado pelo professor</h3>
+    <p id="adminHelp">Conclua corretamente as 10 questões para habilitar a liberação do certificado.</p>
+    <div class="admin-row">
+      <input id="certAdminCode" type="password" placeholder="Código do professor" disabled>
+      <button class="big-btn btn-blue" id="adminReleaseBtn" onclick="adminReleaseCert()" disabled>LIBERAR CERTIFICADO</button>
+    </div>
+    <div class="admin-msg" id="certAdminMsg"></div>
+  </section>
+</main>
+
+<button class="big-btn" id="certButton" onclick="openCertificate()">🔒 CERTIFICADO BLOQUEADO</button>
+
+<div class="cert-overlay" id="certOverlay">
+  <div class="cert-card">
+    <div class="cert-inner">
+      <div class="wm-cloud">ENEM ESPAÑOL ENEM ESPAÑOL ENEM ESPAÑOL ENEM ESPAÑOL ENEM ESPAÑOL ENEM ESPAÑOL ENEM ESPAÑOL ENEM ESPAÑOL ENEM ESPAÑOL</div>
+      <div class="cert-brand">PROJETO FALANGE • LÍNGUA ESPANHOLA</div>
+      <h2 class="cert-title">CERTIFICADO DE CONCLUSÃO</h2>
+      <div class="cert-sub">Revisão ENEM — 2º trimestre</div>
+      <p><strong>Certificamos que</strong></p>
+      <div class="cert-name" id="certName"></div>
+      <p class="cert-text">concluiu a revisão dos conteúdos do 2º trimestre de Língua Espanhola, respondendo corretamente às 10 questões em formato inspirado no ENEM.</p>
+      <div class="cert-meta">
+        <div><strong>Turma:</strong> <span id="certClass"></span></div>
+        <div><strong>Escola:</strong> <span id="certSchool"></span></div>
+        <div><strong>Data e hora:</strong> <span id="certDate"></span></div>
+        <div><strong>Status:</strong> <span id="certStatus"></span></div>
+        <div class="wide"><strong>Código único:</strong> <span id="certCode"></span></div>
+      </div>
+      <div class="validation">VALIDAÇÃO ANTIFRAUDE<br><span id="certFingerprint"></span></div>
+      <div class="warning">Certificado liberado mediante autorização do professor.</div>
+      <div class="cert-actions">
+        <button class="big-btn btn-green" onclick="printCertificate()">🖨 IMPRIMIR</button>
+        <button class="big-btn btn-yellow" onclick="closeCertificate()">FECHAR</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+const TEACHER_CODE = '8cmtvdcbbud';
+let student={name:'',className:'',school:''};
+let solved=new Set();
+let retryRound=0;
+let certificateReleased=false;
+let questionOrder=[];
+let currentIndex=0;
+let timerId=null;
+let secondsLeft=120;
+let sessionToken='';
+let attemptSeed=0;
+let attemptData={};
+const QUESTION_TIME=120;
+const stemVariants = {};
+const safeTextVariants = {};
+const blocks = [
+ {
+  "id": "b1",
+  "title": "Texto 1 — Un proyecto en la escuela",
+  "topic": "Presente do indicativo • -AR, -ER, -IR",
+  "variants": [
+   [
+    "En una escuela de Macapá, un grupo organiza una exposición cultural. Lucía canta en el coro, Mateo aprende nuevas palabras en español y Sofía escribe los carteles de la exposición.",
+    "La profesora explica: «Yo preparo las actividades, tú lees las instrucciones y nosotros compartimos los resultados». Los estudiantes observan que la forma del verbo cambia de acuerdo con la persona.",
+    "Al final de la mañana, el grupo presenta su trabajo a otras clases. Todos participan y hablan de lo que hacen en el presente."
+   ]
+  ],
+  "questions": [
+   {
+    "id": "q1",
+    "difficulty": "easy",
+    "stem": "Segundo o texto, qual atividade é realizada por Sofía?",
+    "options": [
+     {
+      "id": "a",
+      "v": [
+       "Escrever os cartazes da exposição.",
+       "Escrever os cartazes da exposição."
+      ]
+     },
+     {
+      "id": "b",
+      "v": [
+       "Cantar no coro da escola.",
+       "Cantar no coro da escola."
+      ]
+     },
+     {
+      "id": "c",
+      "v": [
+       "Ler notícias no jornal.",
+       "Ler notícias no jornal."
+      ]
+     },
+     {
+      "id": "d",
+      "v": [
+       "Preparar refeições na cantina.",
+       "Preparar refeições na cantina."
+      ]
+     },
+     {
+      "id": "e",
+      "v": [
+       "Organizar os horários de ônibus.",
+       "Organizar os horários de ônibus."
+      ]
+     }
+    ],
+    "answer": "a"
+   },
+   {
+    "id": "q2",
+    "difficulty": "medium",
+    "stem": "Nas expressões «yo preparo», «tú lees» e «nosotros compartimos», a variação verbal evidencia",
+    "options": [
+     {
+      "id": "a",
+      "v": [
+       "a concordância do verbo com a pessoa que realiza a ação.",
+       "a concordância do verbo com a pessoa que realiza a ação."
+      ]
+     },
+     {
+      "id": "b",
+      "v": [
+       "a utilização obrigatória do tempo passado.",
+       "a utilização obrigatória do tempo passado."
+      ]
+     },
+     {
+      "id": "c",
+      "v": [
+       "a inexistência de diferenças entre as terminações verbais.",
+       "a inexistência de diferenças entre as terminações verbais."
+      ]
+     },
+     {
+      "id": "d",
+      "v": [
+       "o emprego exclusivo de verbos terminados em -AR.",
+       "o emprego exclusivo de verbos terminados em -AR."
+      ]
+     },
+     {
+      "id": "e",
+      "v": [
+       "a substituição dos sujeitos por advérbios de lugar.",
+       "a substituição dos sujeitos por advérbios de lugar."
+      ]
+     }
+    ],
+    "answer": "a"
+   }
+  ]
+ },
+ {
+  "id": "b2",
+  "title": "Texto 2 — Profesiones y responsabilidades",
+  "topic": "Profissões • infinitivo • particípio",
+  "variants": [
+   [
+    "En el centro comunitario, Elena es médica, su hermano Diego es cocinero y su amiga Clara es profesora. Elena atiende a las personas, Diego prepara alimentos y Clara enseña español a jóvenes.",
+    "En un anuncio, la coordinadora escribe: «Aprender, compartir y trabajar son acciones importantes». Estas formas verbales están en infinitivo.",
+    "Al finalizar una actividad, Clara dice: «Hemos terminado el taller y hemos compartido los materiales». En estas expresiones aparecen participios terminados en -ado e -ido."
+   ]
+  ],
+  "questions": [
+   {
+    "id": "q3",
+    "difficulty": "easy",
+    "stem": "De acordo com a descrição, qual relação entre profissão e atividade está correta?",
+    "options": [
+     {
+      "id": "a",
+      "v": [
+       "Clara é professora e ensina espanhol.",
+       "Clara é professora e ensina espanhol."
+      ]
+     },
+     {
+      "id": "b",
+      "v": [
+       "Elena é cozinheira e prepara alimentos.",
+       "Elena é cozinheira e prepara alimentos."
+      ]
+     },
+     {
+      "id": "c",
+      "v": [
+       "Diego é médico e atende pacientes.",
+       "Diego é médico e atende pacientes."
+      ]
+     },
+     {
+      "id": "d",
+      "v": [
+       "Clara é médica e trabalha no hospital.",
+       "Clara é médica e trabalha no hospital."
+      ]
+     },
+     {
+      "id": "e",
+      "v": [
+       "Elena é professora e ensina matemática.",
+       "Elena é professora e ensina matemática."
+      ]
+     }
+    ],
+    "answer": "a"
+   },
+   {
+    "id": "q4",
+    "difficulty": "medium",
+    "stem": "No anúncio, a diferença entre «aprender» e «terminado» consiste em que",
+    "options": [
+     {
+      "id": "a",
+      "v": [
+       "«aprender» é infinitivo, enquanto «terminado» é particípio.",
+       "«aprender» é infinitivo, enquanto «terminado» é particípio."
+      ]
+     },
+     {
+      "id": "b",
+      "v": [
+       "ambos são particípios regulares.",
+       "ambos são particípios regulares."
+      ]
+     },
+     {
+      "id": "c",
+      "v": [
+       "«terminado» é infinitivo e «aprender» é particípio.",
+       "«terminado» é infinitivo e «aprender» é particípio."
+      ]
+     },
+     {
+      "id": "d",
+      "v": [
+       "ambos são advérbios de tempo.",
+       "ambos são advérbios de tempo."
+      ]
+     },
+     {
+      "id": "e",
+      "v": [
+       "os dois são substantivos que designam profissões.",
+       "os dois são substantivos que designam profissões."
+      ]
+     }
+    ],
+    "answer": "a"
+   }
+  ]
+ },
+ {
+  "id": "b3",
+  "title": "Texto 3 — La rutina de Valeria",
+  "topic": "Rotina diária • períodos do dia • horários",
+  "variants": [
+   [
+    "Valeria se despierta a las seis de la mañana. Desayuna en casa y va a la escuela a las siete y media. Por la tarde, hace sus tareas y practica español con sus compañeros.",
+    "Por la noche, cena con su familia y prepara los materiales del día siguiente. Los fines de semana descansa y visita a sus abuelos.",
+    "Para Valeria, organizar las actividades por la mañana, por la tarde y por la noche permite aprovechar mejor su tiempo."
+   ]
+  ],
+  "questions": [
+   {
+    "id": "q5",
+    "difficulty": "medium",
+    "stem": "A organização temporal apresentada no relato mostra que Valeria",
+    "options": [
+     {
+      "id": "a",
+      "v": [
+       "distribui atividades de estudo e convivência em diferentes períodos do dia.",
+       "distribui atividades de estudo e convivência em diferentes períodos do dia."
+      ]
+     },
+     {
+      "id": "b",
+      "v": [
+       "frequenta a escola exclusivamente à noite.",
+       "frequenta a escola exclusivamente à noite."
+      ]
+     },
+     {
+      "id": "c",
+      "v": [
+       "visita seus avós todas as manhãs antes da aula.",
+       "visita seus avós todas as manhãs antes da aula."
+      ]
+     },
+     {
+      "id": "d",
+      "v": [
+       "não realiza tarefas escolares durante a tarde.",
+       "não realiza tarefas escolares durante a tarde."
+      ]
+     },
+     {
+      "id": "e",
+      "v": [
+       "substitui o café da manhã pelo jantar.",
+       "substitui o café da manhã pelo jantar."
+      ]
+     }
+    ],
+    "answer": "a"
+   }
+  ]
+ },
+ {
+  "id": "b4",
+  "title": "Texto 4 — ¿Dónde está la mochila?",
+  "topic": "Advérbios e preposições de lugar",
+  "variants": [
+   [
+    "En la biblioteca, Javier pregunta: «¿Dónde está mi mochila?». Ana responde: «Está debajo de la mesa, cerca de la ventana».",
+    "Javier mira encima de la mesa, pero no encuentra nada. Luego observa debajo y descubre su mochila. El diccionario está al lado de los libros y el reloj está delante de la puerta.",
+    "Las expresiones de lugar ayudan a describir posiciones y a encontrar objetos en espacios compartidos."
+   ]
+  ],
+  "questions": [
+   {
+    "id": "q6",
+    "difficulty": "easy",
+    "stem": "Conforme a resposta de Ana, a mochila está",
+    "options": [
+     {
+      "id": "a",
+      "v": [
+       "embaixo da mesa, perto da janela.",
+       "embaixo da mesa, perto da janela."
+      ]
+     },
+     {
+      "id": "b",
+      "v": [
+       "em cima da mesa, longe da janela.",
+       "em cima da mesa, longe da janela."
+      ]
+     },
+     {
+      "id": "c",
+      "v": [
+       "atrás da porta da biblioteca.",
+       "atrás da porta da biblioteca."
+      ]
+     },
+     {
+      "id": "d",
+      "v": [
+       "dentro do armário da professora.",
+       "dentro do armário da professora."
+      ]
+     },
+     {
+      "id": "e",
+      "v": [
+       "ao lado do relógio, sobre a porta.",
+       "ao lado do relógio, sobre a porta."
+      ]
+     }
+    ],
+    "answer": "a"
+   }
+  ]
+ },
+ {
+  "id": "b5",
+  "title": "Texto 5 — Los animales y las expresiones",
+  "topic": "Animais • classificação • sentido figurado",
+  "variants": [
+   [
+    "En una actividad, los estudiantes identifican animales domésticos, como el perro y el gato, y animales silvestres, como el jaguar. También conversan sobre animales que viven en ambientes diferentes.",
+    "La profesora escribe en la pizarra la expresión «estar como pez en el agua». Explica que, cuando alguien se siente cómodo en una situación, esa expresión puede describir su tranquilidad y seguridad.",
+    "Los alumnos comprenden que una expresión con el nombre de un animal no siempre describe literalmente al animal: también puede transmitir una idea sobre las personas."
+   ]
+  ],
+  "questions": [
+   {
+    "id": "q7",
+    "difficulty": "hard",
+    "stem": "Ao explicar «estar como pez en el agua», o texto destaca que as expressões idiomáticas",
+    "options": [
+     {
+      "id": "a",
+      "v": [
+       "podem utilizar imagens de animais para representar experiências humanas.",
+       "podem utilizar imagens de animais para representar experiências humanas."
+      ]
+     },
+     {
+      "id": "b",
+      "v": [
+       "devem ser interpretadas sempre como descrições científicas.",
+       "devem ser interpretadas sempre como descrições científicas."
+      ]
+     },
+     {
+      "id": "c",
+      "v": [
+       "só são compreendidas quando traduzidas palavra por palavra.",
+       "só são compreendidas quando traduzidas palavra por palavra."
+      ]
+     },
+     {
+      "id": "d",
+      "v": [
+       "eliminam a possibilidade de sentido figurado na comunicação.",
+       "eliminam a possibilidade de sentido figurado na comunicação."
+      ]
+     },
+     {
+      "id": "e",
+      "v": [
+       "servem exclusivamente para classificar espécies domésticas.",
+       "servem exclusivamente para classificar espécies domésticas."
+      ]
+     }
+    ],
+    "answer": "a"
+   }
+  ]
+ },
+ {
+  "id": "b6",
+  "title": "Texto 6 — Un viaje cultural por México",
+  "topic": "México • patrimônio • tradições • povos originários",
+  "variants": [
+   [
+    "Un grupo de estudiantes prepara un pasaporte cultural sobre México, cuya capital es Ciudad de México. En el proyecto, investigan la influencia histórica de los pueblos mexicas (aztecas) y mayas y observan imágenes de antiguas construcciones.",
+    "El grupo también descubre que el Día de Muertos es una tradición cultural en la que muchas familias recuerdan a sus seres queridos mediante ofrendas, flores y otros símbolos.",
+    "La exposición no presenta México como una cultura única y uniforme: muestra la convivencia de historias, lenguas y costumbres diferentes."
+   ]
+  ],
+  "questions": [
+   {
+    "id": "q8",
+    "difficulty": "hard",
+    "stem": "A abordagem cultural do projeto escolar permite concluir que o patrimônio mexicano",
+    "options": [
+     {
+      "id": "a",
+      "v": [
+       "reúne diferentes heranças históricas e práticas culturais que permanecem significativas.",
+       "reúne diferentes heranças históricas e práticas culturais que permanecem significativas."
+      ]
+     },
+     {
+      "id": "b",
+      "v": [
+       "se restringe a uma única tradição sem diversidade regional.",
+       "se restringe a uma única tradição sem diversidade regional."
+      ]
+     },
+     {
+      "id": "c",
+      "v": [
+       "foi formado exclusivamente por influências contemporâneas.",
+       "foi formado exclusivamente por influências contemporâneas."
+      ]
+     },
+     {
+      "id": "d",
+      "v": [
+       "não possui relação com os povos originários do território.",
+       "não possui relação com os povos originários do território."
+      ]
+     },
+     {
+      "id": "e",
+      "v": [
+       "pode ser explicado apenas pela localização de sua capital.",
+       "pode ser explicado apenas pela localização de sua capital."
+      ]
+     }
+    ],
+    "answer": "a"
+   }
+  ]
+ },
+ {
+  "id": "b7",
+  "title": "Texto 7 — El Chavo y la vida en la vecindad",
+  "topic": "Chaves • cultura popular • comunicação audiovisual",
+  "variants": [
+   [
+    "En una clase de español, los alumnos observan una escena de la serie mexicana «El Chavo del Ocho», conocida en Brasil como «Chaves». Los personajes conversan en una vecindad y protagonizan situaciones humorísticas del día a día.",
+    "El profesor propone escuchar los diálogos, identificar saludos y expresiones cotidianas y observar cómo los gestos, la entonación y las relaciones entre los personajes ayudan a construir el humor.",
+    "Después de la actividad, la clase conversa sobre las diferencias entre comprender cada palabra y comprender el sentido general de una escena audiovisual situada en un contexto cultural."
+   ]
+  ],
+  "questions": [
+   {
+    "id": "q9",
+    "difficulty": "hard",
+    "stem": "Ao associar falas, gestos e entonação, a atividade com a série evidencia que a compreensão audiovisual",
+    "options": [
+     {
+      "id": "a",
+      "v": [
+       "depende da articulação entre linguagem verbal, elementos não verbais e contexto cultural.",
+       "depende da articulação entre linguagem verbal, elementos não verbais e contexto cultural."
+      ]
+     },
+     {
+      "id": "b",
+      "v": [
+       "exige apenas a tradução isolada de todos os verbos.",
+       "exige apenas a tradução isolada de todos os verbos."
+      ]
+     },
+     {
+      "id": "c",
+      "v": [
+       "dispensa observar as relações sociais entre os personagens.",
+       "dispensa observar as relações sociais entre os personagens."
+      ]
+     },
+     {
+      "id": "d",
+      "v": [
+       "elimina a importância da situação comunicativa.",
+       "elimina a importância da situação comunicativa."
+      ]
+     },
+     {
+      "id": "e",
+      "v": [
+       "se limita à identificação de nomes dos atores.",
+       "se limita à identificação de nomes dos atores."
+      ]
+     }
+    ],
+    "answer": "a"
+   },
+   {
+    "id": "q10",
+    "difficulty": "medium",
+    "stem": "No contexto da atividade, a série «El Chavo del Ocho» é utilizada principalmente para",
+    "options": [
+     {
+      "id": "a",
+      "v": [
+       "explorar vocabulário cotidiano e formas de comunicação presentes na cultura popular mexicana.",
+       "explorar vocabulário cotidiano e formas de comunicação presentes na cultura popular mexicana."
+      ]
+     },
+     {
+      "id": "b",
+      "v": [
+       "ensinar exclusivamente a classificação biológica de animais.",
+       "ensinar exclusivamente a classificação biológica de animais."
+      ]
+     },
+     {
+      "id": "c",
+      "v": [
+       "substituir a leitura por exercícios de cálculo.",
+       "substituir a leitura por exercícios de cálculo."
+      ]
+     },
+     {
+      "id": "d",
+      "v": [
+       "apresentar apenas regras de formação do particípio.",
+       "apresentar apenas regras de formação do particípio."
+      ]
+     },
+     {
+      "id": "e",
+      "v": [
+       "demonstrar que expressões gestuais não têm significado.",
+       "demonstrar que expressões gestuais não têm significado."
+      ]
+     }
+    ],
+    "answer": "a"
+   }
+  ]
+ }
+];
+
+function shuffle(arr){const a=[...arr];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a}
+function xmur3(str){let h=1779033703^str.length;for(let i=0;i<str.length;i++){h=Math.imul(h^str.charCodeAt(i),3432918353);h=h<<13|h>>>19}return function(){h=Math.imul(h^h>>>16,2246822507);h=Math.imul(h^h>>>13,3266489909);return (h^h>>>16)>>>0}}
+function mulberry32(a){return function(){let t=a+=0x6D2B79F5;t=Math.imul(t^t>>>15,t|1);t^=t+Math.imul(t^t>>>7,t|61);return((t^t>>>14)>>>0)/4294967296}}
+function seededShuffle(arr,seedText){const a=[...arr],seed=xmur3(seedText)(),rand=mulberry32(seed);for(let i=a.length-1;i>0;i--){const j=Math.floor(rand()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a}
+function getAllQuestions(){const list=[];blocks.forEach(block=>block.questions.forEach(q=>list.push({block,q})));return list}
+function textVariant(block){const v=safeTextVariants[block.id]||block.variants;return v[retryRound%v.length]}
+function optionText(opt,qid){const idx=(retryRound+questionNumber(qid))%opt.v.length;return opt.v[idx]}
+function stemText(q){const arr=stemVariants[q.id]||[q.stem];return arr[(retryRound+questionNumber(q.id))%arr.length]}
+function difficultyLabel(d){return {easy:'FÁCIL',medium:'MÉDIA',hard:'DIFÍCIL'}[d]||''}
+function applyDynamicText(text){return text;}
+function makeAttemptData(){attemptData={};}
+function buildQuestionOrder(){const all=getAllQuestions();questionOrder=seededShuffle(all,student.name+'|'+student.className+'|'+retryRound+'|'+sessionToken);currentIndex=0;}
+function render(){const root=document.getElementById('contentRoot');root.innerHTML='';if(!questionOrder.length)buildQuestionOrder();questionOrder.forEach((item,idx)=>{const {block,q}=item;const stage=document.createElement('section');stage.className='question-stage'+(idx===currentIndex?' active':'');stage.id='stage-'+idx;const paras=textVariant(block).map(applyDynamicText);stage.innerHTML=`<div class="stage-card"><div class="stage-top"><span class="stage-count">QUESTÃO ${idx+1} DE 10</span><span class="session-pill">Tentativa ${retryRound+1}</span><span class="timer-pill" id="timer-${idx}">⏱ ${QUESTION_TIME}s</span></div><div class="text-head"><h2>${block.title}</h2><span class="topic-tag">${block.topic}</span></div><article class="stage-reading">${paras.map(p=>`<p>${p}</p>`).join('')}</article><div class="stage-question" id="zone-${idx}"></div></div>`;root.appendChild(stage);stage.querySelector('.stage-question').appendChild(renderQuestion(q,idx));});updateProgress();if(student.name)startQuestionTimer();}
+function renderQuestion(q,idx){const box=document.createElement('div');box.className='question';box.id=q.id;box.innerHTML=`<span class="difficulty ${q.difficulty}">${difficultyLabel(q.difficulty)}</span><h3>${stemText(q)}</h3><p class="command">Assinale a alternativa correta com base no texto e nos conhecimentos de Língua Espanhola trabalhados no trimestre.</p><div class="alternatives"></div><div class="feedback" id="fb-${q.id}"></div><div class="next-wrap" id="next-${q.id}"><button class="big-btn btn-green" type="button">PRÓXIMA QUESTÃO ▶</button></div>`;const alternatives=box.querySelector('.alternatives');const opts=seededShuffle(q.options,sessionToken+'|'+retryRound+'|'+q.id);opts.forEach((opt,n)=>{const b=document.createElement('button');b.type='button';b.className='alt';b.dataset.option=opt.id;b.innerHTML=`<span class="letter">${String.fromCharCode(65+n)}</span><span>${optionText(opt,q.id)}</span>`;b.addEventListener('click',()=>choose(q,b,opt.id));alternatives.appendChild(b)});box.querySelector('.next-wrap button').addEventListener('click',()=>advanceQuestion());return box}
+function questionNumber(id){return parseInt(id.replace('q',''),10)}
+function choose(q,btn,optId){if(solved.has(q.id))return;stopQuestionTimer();const fb=document.getElementById('fb-'+q.id);if(optId===q.answer){solved.add(q.id);btn.classList.add('correct');document.querySelectorAll('#'+q.id+' .alt').forEach(x=>x.disabled=true);fb.className='feedback ok';fb.textContent='✅ Resposta correta.';document.getElementById('next-'+q.id).classList.add('show');updateProgress();if(solved.size===10){document.getElementById('next-'+q.id+'').querySelector('button').textContent='FINALIZAR REVISÃO 🏆';}}else{fb.className='feedback bad';fb.textContent='❌ Resposta incorreta. A revisão será reiniciada desde o registro.';document.getElementById(q.id).classList.add('shake');setTimeout(()=>resetAfterWrong('Resposta incorreta.'),650)}}
+function advanceQuestion(){if(solved.size===10){completeReview();return}currentIndex++;document.querySelectorAll('.question-stage').forEach((el,i)=>el.classList.toggle('active',i===currentIndex));window.scrollTo({top:0,behavior:'auto'});startQuestionTimer()}
+function startQuestionTimer(){stopQuestionTimer();secondsLeft=QUESTION_TIME;paintTimer();timerId=setInterval(()=>{secondsLeft--;paintTimer();if(secondsLeft<=0){stopQuestionTimer();resetAfterWrong('Tempo esgotado na questão.') }},1000)}
+function stopQuestionTimer(){if(timerId){clearInterval(timerId);timerId=null}}
+function paintTimer(){const el=document.getElementById('timer-'+currentIndex);if(!el)return;el.textContent='⏱ '+secondsLeft+'s';el.classList.toggle('warn',secondsLeft<=30&&secondsLeft>10);el.classList.toggle('danger',secondsLeft<=10)}
+function updateProgress(){document.getElementById('progressPill').textContent='Acertos: '+solved.size+'/10'}
+function makeSessionToken(){return Math.random().toString(36).slice(2,7).toUpperCase()+Date.now().toString(36).slice(-5).toUpperCase()}
+function updateWatermark(){const layer=document.getElementById('watermarkLayer');if(!student.name){layer.classList.remove('show');layer.innerHTML='';return}const txt=`${student.name} • ${student.className} • ${sessionToken}`;layer.innerHTML=Array.from({length:18},()=>`<div class="watermark-item">${txt}</div>`).join('');layer.classList.add('show')}
+function startLesson(){const name=document.getElementById('studentName').value.trim();const className=document.getElementById('studentClass').value.trim();const school=document.getElementById('studentSchool').value.trim();if(name.length<3||className.length<1||school.length<2){document.getElementById('regMsg').textContent='Preencha nome completo, turma e escola para iniciar.';return}student={name,className,school};sessionToken=makeSessionToken();attemptSeed++;makeAttemptData();buildQuestionOrder();document.body.classList.add('exam-active');document.getElementById('screenShield').classList.remove('show');document.getElementById('studentLine').textContent=`Aluno: ${name} | Turma: ${className} | Escola: ${school}`;document.getElementById('registerOverlay').style.display='none';document.getElementById('regMsg').textContent='';updateWatermark();render();window.scrollTo({top:0,behavior:'auto'})}
+function resetAfterWrong(reason){stopQuestionTimer();retryRound++;solved.clear();certificateReleased=false;questionOrder=[];currentIndex=0;document.getElementById('finishBox').classList.remove('show');lockCertificate();student={name:'',className:'',school:''};document.body.classList.remove('exam-active');document.getElementById('screenShield').classList.remove('show');document.getElementById('studentLine').textContent='Aluno: — | Turma: — | Escola: —';['studentName','studentClass','studentSchool'].forEach(id=>document.getElementById(id).value='');document.getElementById('regMsg').textContent=(reason||'Tentativa reiniciada.')+' Preencha o registro novamente para continuar.';updateWatermark();document.getElementById('contentRoot').innerHTML='';document.getElementById('registerOverlay').style.display='flex';window.scrollTo({top:0,behavior:'auto'})}
+function newStudent(){stopQuestionTimer();retryRound=0;solved.clear();certificateReleased=false;questionOrder=[];currentIndex=0;document.getElementById('finishBox').classList.remove('show');lockCertificate();student={name:'',className:'',school:''};document.body.classList.remove('exam-active');document.getElementById('screenShield').classList.remove('show');document.getElementById('studentLine').textContent='Aluno: — | Turma: — | Escola: —';['studentName','studentClass','studentSchool'].forEach(id=>document.getElementById(id).value='');document.getElementById('regMsg').textContent='';updateWatermark();document.getElementById('contentRoot').innerHTML='';document.getElementById('registerOverlay').style.display='flex';window.scrollTo({top:0,behavior:'auto'})}
+function completeReview(){stopQuestionTimer();document.body.classList.remove('exam-active');document.getElementById('finishBox').classList.add('show');const admin=document.getElementById('adminBox');admin.classList.remove('locked');document.getElementById('certAdminCode').disabled=false;document.getElementById('adminReleaseBtn').disabled=false;document.getElementById('adminHelp').textContent='Revisão concluída. O professor deve digitar o código de autorização para liberar o certificado.';document.getElementById('finishBox').scrollIntoView({behavior:'smooth',block:'center'})}
+function lockCertificate(){const admin=document.getElementById('adminBox');admin.classList.add('locked');document.getElementById('certAdminCode').value='';document.getElementById('certAdminCode').disabled=true;document.getElementById('adminReleaseBtn').disabled=true;document.getElementById('adminHelp').textContent='Conclua corretamente as 10 questões para habilitar a liberação do certificado.';document.getElementById('certAdminMsg').textContent='';const b=document.getElementById('certButton');b.classList.remove('ready');b.textContent='🔒 CERTIFICADO BLOQUEADO'}
+function adminReleaseCert(){if(solved.size!==10){document.getElementById('certAdminMsg').textContent='A revisão ainda não foi concluída.';return}const code=document.getElementById('certAdminCode').value.trim();if(code!==TEACHER_CODE){document.getElementById('certAdminMsg').textContent='Código incorreto.';return}certificateReleased=true;document.getElementById('certAdminMsg').textContent='✅ Certificado liberado pelo professor.';const b=document.getElementById('certButton');b.classList.add('ready');b.textContent='🏆 ABRIR CERTIFICADO';prepareCertificate()}
+function showGuard(msg){const t=document.getElementById('guardToast');t.textContent=msg;t.classList.add('show');clearTimeout(window.__guardT);window.__guardT=setTimeout(()=>t.classList.remove('show'),2300)}
+document.addEventListener('contextmenu',e=>{if(document.body.classList.contains('exam-active')){e.preventDefault();showGuard('A cópia direta está desativada durante a revisão.')}});
+document.addEventListener('copy',e=>{if(document.body.classList.contains('exam-active')){e.preventDefault();showGuard('A cópia direta está desativada durante a revisão.')}});
+document.addEventListener('cut',e=>{if(document.body.classList.contains('exam-active'))e.preventDefault()});
+document.addEventListener('dragstart',e=>{if(document.body.classList.contains('exam-active'))e.preventDefault()});
+function showScreenShield(message,allowResume){
+ if(!document.body.classList.contains('exam-active'))return;
+ const sh=document.getElementById('screenShield');
+ const msg=document.getElementById('shieldMessage');
+ const btn=document.getElementById('resumeExamBtn');
+ if(msg)msg.textContent=message||'🔒 A revisão foi ocultada porque a janela perdeu o foco.';
+ if(btn)btn.disabled=!allowResume;
+ sh.classList.add('show');
+}
+function resumeProtectedExam(){
+ if(!document.body.classList.contains('exam-active'))return;
+ if(document.hidden||!document.hasFocus())return;
+ document.getElementById('screenShield').classList.remove('show');
+ const btn=document.getElementById('resumeExamBtn');
+ if(btn)btn.disabled=true;
+}
+function punishCapture(reason){
+ if(!document.body.classList.contains('exam-active'))return;
+ // Cobre a questão imediatamente e, em seguida, zera a tentativa.
+ showScreenShield('🚫 Tentativa de captura ou saída da atividade detectada. A tentativa será reiniciada.',false);
+ showGuard('Tentativa de captura detectada. Retornando ao registro.');
+ setTimeout(()=>resetAfterWrong(reason||'Tentativa de captura de tela detectada.'),120);
+}
+function activatePrintShield(message){
+ punishCapture(message||'Tentativa de captura de tela detectada.');
+}
+document.addEventListener('keydown',e=>{
+ if(!document.body.classList.contains('exam-active'))return;
+ const k=(e.key||'').toLowerCase();
+ if((e.ctrlKey||e.metaKey)&&['c','u','s','p','a'].includes(k)){e.preventDefault();showGuard('Atalho desativado durante a revisão.');}
+ const isPrint=e.key==='PrintScreen'||e.code==='PrintScreen';
+ const isSnip=(e.metaKey&&e.shiftKey&&k==='s')||(e.ctrlKey&&e.shiftKey&&k==='s');
+ if(isPrint||isSnip){
+   e.preventDefault();
+   e.stopPropagation();
+   punishCapture('Tentativa de print/captura detectada.');
+ }
+},true);
+document.addEventListener('keyup',e=>{
+ if((e.key==='PrintScreen'||e.code==='PrintScreen')&&document.body.classList.contains('exam-active')){
+   e.preventDefault();
+   punishCapture('Tentativa de Print Screen detectada.');
+ }
+},true);
+// Em celular/tablet o navegador normalmente NÃO recebe um evento específico quando os botões físicos tiram print.
+// Como proteção máxima possível em HTML, qualquer saída da tela, perda de foco ou suspensão durante a questão reinicia a tentativa.
+document.addEventListener('visibilitychange',()=>{
+ if(!document.body.classList.contains('exam-active'))return;
+ if(document.hidden)punishCapture('A atividade saiu da tela durante a questão.');
+});
+window.addEventListener('blur',()=>{
+ if(document.body.classList.contains('exam-active'))punishCapture('A janela perdeu o foco durante a questão.');
+});
+function blockMultiTouchCapture(e){
+ if(!document.body.classList.contains('exam-active'))return;
+ if(e.touches && e.touches.length>=3){
+   e.preventDefault();
+   e.stopPropagation();
+   punishCapture('Gesto de captura detectado.');
+ }
+}
+document.addEventListener('touchstart',blockMultiTouchCapture,{passive:false,capture:true});
+document.addEventListener('touchmove',blockMultiTouchCapture,{passive:false,capture:true});
+document.addEventListener('gesturestart',e=>{
+ if(document.body.classList.contains('exam-active')){
+   e.preventDefault();
+   punishCapture('Gesto de captura detectado.');
+ }
+},{passive:false,capture:true});
+window.addEventListener('pagehide',()=>{
+ if(document.body.classList.contains('exam-active'))punishCapture('A página saiu de primeiro plano durante a questão.');
+});
+document.addEventListener('freeze',()=>{
+ if(document.body.classList.contains('exam-active'))punishCapture('A atividade foi suspensa durante a questão.');
+});
+window.addEventListener('beforeprint',()=>{
+ if(document.body.classList.contains('exam-active'))punishCapture('Tentativa de impressão/captura detectada.');
+});
+function makeHash(str){let h=2166136261;for(let i=0;i<str.length;i++){h^=str.charCodeAt(i);h=Math.imul(h,16777619)}return (h>>>0).toString(16).toUpperCase().padStart(8,'0')}
+function prepareCertificate(){
+ const now=new Date(); const stamp=now.toLocaleString('pt-BR'); const raw=`${student.name}|${student.className}|${student.school}|${stamp}|ENEM2T`;
+ const code='FAL-ENEM2T-'+makeHash(raw)+'-'+String(now.getFullYear());
+ document.getElementById('certName').textContent=student.name;document.getElementById('certClass').textContent=student.className;document.getElementById('certSchool').textContent=student.school;document.getElementById('certDate').textContent=stamp;document.getElementById('certStatus').textContent='Concluído e liberado pelo professor';document.getElementById('certCode').textContent=code;document.getElementById('certFingerprint').textContent=makeHash(raw+code)+'-'+makeHash(code+raw);
+}
+function openCertificate(){if(!certificateReleased){alert('O certificado ainda está bloqueado. Conclua as 10 questões e solicite a liberação ao professor.');return}prepareCertificate();document.getElementById('certOverlay').classList.add('show')}
+function closeCertificate(){document.getElementById('certOverlay').classList.remove('show')}
+function printCertificate(){document.body.classList.add('cert-print');window.print();setTimeout(()=>document.body.classList.remove('cert-print'),500)}
+lockCertificate();
+</script>
+</body>
+</html>
