@@ -77,17 +77,7 @@ body.exam-active{-webkit-user-select:none;user-select:none;-webkit-touch-callout
 
   <section class="finish-box" id="finishBox">
     <h2>✅ Revisão concluída!</h2>
-    <p>Você acertou as 10 questões. O certificado continua bloqueado e só pode ser liberado pelo professor com o código de autorização.</p>
-  </section>
-
-  <section class="admin-box locked" id="adminBox">
-    <h3>🔐 Liberação do certificado pelo professor</h3>
-    <p id="adminHelp">Conclua corretamente as 10 questões para habilitar a liberação do certificado.</p>
-    <div class="admin-row">
-      <input id="certAdminCode" type="password" placeholder="Código do professor" disabled>
-      <button class="big-btn btn-blue" id="adminReleaseBtn" onclick="adminReleaseCert()" disabled>LIBERAR CERTIFICADO</button>
-    </div>
-    <div class="admin-msg" id="certAdminMsg"></div>
+    <p>Você acertou as 10 questões. Seu certificado foi liberado automaticamente!</p>
   </section>
 </main>
 
@@ -111,7 +101,7 @@ body.exam-active{-webkit-user-select:none;user-select:none;-webkit-touch-callout
         <div class="wide"><strong>Código único:</strong> <span id="certCode"></span></div>
       </div>
       <div class="validation">VALIDAÇÃO ANTIFRAUDE<br><span id="certFingerprint"></span></div>
-      <div class="warning">Certificado liberado mediante autorização do professor.</div>
+      <div class="warning">Certificado emitido automaticamente após a conclusão das 10 questões.</div>
       <div class="cert-actions">
         <button class="big-btn btn-green" onclick="printCertificate()">🖨 IMPRIMIR</button>
         <button class="big-btn btn-yellow" onclick="closeCertificate()">FECHAR</button>
@@ -121,7 +111,6 @@ body.exam-active{-webkit-user-select:none;user-select:none;-webkit-touch-callout
 </div>
 
 <script>
-const TEACHER_CODE = '8cmtvdcbbud';
 let student={name:'',className:'',school:''};
 let solved=new Set();
 let retryRound=0;
@@ -693,9 +682,24 @@ function updateWatermark(){const layer=document.getElementById('watermarkLayer')
 function startLesson(){const name=document.getElementById('studentName').value.trim();const className=document.getElementById('studentClass').value.trim();const school=document.getElementById('studentSchool').value.trim();if(name.length<3||className.length<1||school.length<2){document.getElementById('regMsg').textContent='Preencha nome completo, turma e escola para iniciar.';return}student={name,className,school};sessionToken=makeSessionToken();attemptSeed++;makeAttemptData();buildQuestionOrder();document.body.classList.add('exam-active');document.getElementById('screenShield').classList.remove('show');document.getElementById('studentLine').textContent=`Aluno: ${name} | Turma: ${className} | Escola: ${school}`;document.getElementById('registerOverlay').style.display='none';document.getElementById('regMsg').textContent='';updateWatermark();render();window.scrollTo({top:0,behavior:'auto'})}
 function resetAfterWrong(reason){stopQuestionTimer();retryRound++;solved.clear();certificateReleased=false;questionOrder=[];currentIndex=0;document.getElementById('finishBox').classList.remove('show');lockCertificate();student={name:'',className:'',school:''};document.body.classList.remove('exam-active');document.getElementById('screenShield').classList.remove('show');document.getElementById('studentLine').textContent='Aluno: — | Turma: — | Escola: —';['studentName','studentClass','studentSchool'].forEach(id=>document.getElementById(id).value='');document.getElementById('regMsg').textContent=(reason||'Tentativa reiniciada.')+' Preencha o registro novamente para continuar.';updateWatermark();document.getElementById('contentRoot').innerHTML='';document.getElementById('registerOverlay').style.display='flex';window.scrollTo({top:0,behavior:'auto'})}
 function newStudent(){stopQuestionTimer();retryRound=0;solved.clear();certificateReleased=false;questionOrder=[];currentIndex=0;document.getElementById('finishBox').classList.remove('show');lockCertificate();student={name:'',className:'',school:''};document.body.classList.remove('exam-active');document.getElementById('screenShield').classList.remove('show');document.getElementById('studentLine').textContent='Aluno: — | Turma: — | Escola: —';['studentName','studentClass','studentSchool'].forEach(id=>document.getElementById(id).value='');document.getElementById('regMsg').textContent='';updateWatermark();document.getElementById('contentRoot').innerHTML='';document.getElementById('registerOverlay').style.display='flex';window.scrollTo({top:0,behavior:'auto'})}
-function completeReview(){stopQuestionTimer();document.body.classList.remove('exam-active');document.getElementById('finishBox').classList.add('show');const admin=document.getElementById('adminBox');admin.classList.remove('locked');document.getElementById('certAdminCode').disabled=false;document.getElementById('adminReleaseBtn').disabled=false;document.getElementById('adminHelp').textContent='Revisão concluída. O professor deve digitar o código de autorização para liberar o certificado.';document.getElementById('finishBox').scrollIntoView({behavior:'smooth',block:'center'})}
-function lockCertificate(){const admin=document.getElementById('adminBox');admin.classList.add('locked');document.getElementById('certAdminCode').value='';document.getElementById('certAdminCode').disabled=true;document.getElementById('adminReleaseBtn').disabled=true;document.getElementById('adminHelp').textContent='Conclua corretamente as 10 questões para habilitar a liberação do certificado.';document.getElementById('certAdminMsg').textContent='';const b=document.getElementById('certButton');b.classList.remove('ready');b.textContent='🔒 CERTIFICADO BLOQUEADO'}
-function adminReleaseCert(){if(solved.size!==10){document.getElementById('certAdminMsg').textContent='A revisão ainda não foi concluída.';return}const code=document.getElementById('certAdminCode').value.trim();if(code!==TEACHER_CODE){document.getElementById('certAdminMsg').textContent='Código incorreto.';return}certificateReleased=true;document.getElementById('certAdminMsg').textContent='✅ Certificado liberado pelo professor.';const b=document.getElementById('certButton');b.classList.add('ready');b.textContent='🏆 ABRIR CERTIFICADO';prepareCertificate()}
+function completeReview(){
+ if(solved.size!==10 || currentIndex!==questionOrder.length-1) return;
+ stopQuestionTimer();
+ document.body.classList.remove('exam-active');
+ document.getElementById('finishBox').classList.add('show');
+ certificateReleased=true;
+ const b=document.getElementById('certButton');
+ b.classList.add('ready');
+ b.textContent='🏆 ABRIR CERTIFICADO';
+ openCertificate();
+}
+function lockCertificate(){
+ certificateReleased=false;
+ const b=document.getElementById('certButton');
+ b.classList.remove('ready');
+ b.textContent='🔒 CERTIFICADO BLOQUEADO';
+ document.getElementById('certOverlay').classList.remove('show');
+}
 function showGuard(msg){const t=document.getElementById('guardToast');t.textContent=msg;t.classList.add('show');clearTimeout(window.__guardT);window.__guardT=setTimeout(()=>t.classList.remove('show'),2300)}
 document.addEventListener('contextmenu',e=>{if(document.body.classList.contains('exam-active')){e.preventDefault();showGuard('A cópia direta está desativada durante a revisão.')}});
 document.addEventListener('copy',e=>{if(document.body.classList.contains('exam-active')){e.preventDefault();showGuard('A cópia direta está desativada durante a revisão.')}});
@@ -783,9 +787,9 @@ function makeHash(str){let h=2166136261;for(let i=0;i<str.length;i++){h^=str.cha
 function prepareCertificate(){
  const now=new Date(); const stamp=now.toLocaleString('pt-BR'); const raw=`${student.name}|${student.className}|${student.school}|${stamp}|ENEM2T`;
  const code='FAL-ENEM2T-'+makeHash(raw)+'-'+String(now.getFullYear());
- document.getElementById('certName').textContent=student.name;document.getElementById('certClass').textContent=student.className;document.getElementById('certSchool').textContent=student.school;document.getElementById('certDate').textContent=stamp;document.getElementById('certStatus').textContent='Concluído e liberado pelo professor';document.getElementById('certCode').textContent=code;document.getElementById('certFingerprint').textContent=makeHash(raw+code)+'-'+makeHash(code+raw);
+ document.getElementById('certName').textContent=student.name;document.getElementById('certClass').textContent=student.className;document.getElementById('certSchool').textContent=student.school;document.getElementById('certDate').textContent=stamp;document.getElementById('certStatus').textContent='Concluído — emissão automática';document.getElementById('certCode').textContent=code;document.getElementById('certFingerprint').textContent=makeHash(raw+code)+'-'+makeHash(code+raw);
 }
-function openCertificate(){if(!certificateReleased){alert('O certificado ainda está bloqueado. Conclua as 10 questões e solicite a liberação ao professor.');return}prepareCertificate();document.getElementById('certOverlay').classList.add('show')}
+function openCertificate(){if(!certificateReleased){alert('O certificado ainda está bloqueado. Conclua corretamente as 10 questões para liberar automaticamente.');return}prepareCertificate();document.getElementById('certOverlay').classList.add('show')}
 function closeCertificate(){document.getElementById('certOverlay').classList.remove('show')}
 function printCertificate(){document.body.classList.add('cert-print');window.print();setTimeout(()=>document.body.classList.remove('cert-print'),500)}
 lockCertificate();
